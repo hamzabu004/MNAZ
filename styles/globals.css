@@ -1,0 +1,341 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Roboto", Sans-serif;
+  scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+}
+
+.active {
+  color: #c10000;
+  /* border-bottom: solid 3px #c10000; */
+}
+
+.hamburger {
+  display: none;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  opacity: 0;
+  z-index: 1;
+  transition: opacity 0.7s ease;
+}
+
+.heroBg {
+  position: relative;
+}
+
+.heroBg::before {
+  content: "";
+  background-image: url("/images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: brightness(60%);
+  z-index: -1;
+}
+.testimonialBg {
+  position: relative;
+}
+.testimonialBg::before {
+  content: "";
+  background-image: url("/images/testimonial.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.sellBg {
+  position: relative;
+}
+
+.sellBg::before {
+  content: "";
+  background-image: url("/images/sell.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.borrowBg {
+  position: relative;
+}
+
+.borrowBg::before {
+  content: "";
+  background-image: url("/images/borrow.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.aboutBg {
+  position: relative;
+}
+
+.aboutBg::before {
+  content: "";
+  background-image: url("/images/about.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.howItWorkBg {
+  position: relative;
+}
+
+.howItWorkBg::before {
+  content: "";
+  background-image: url("/images/how-it-works.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.howIoPledgeBg {
+  position: relative;
+}
+
+.howIoPledgeBg::before {
+  content: "";
+  background-image: url("/images/how-it-pledge.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.whatShouldKnowBg {
+  position: relative;
+}
+
+.whatShouldKnowBg::before {
+  content: "";
+  background-image: url("/images/what-should-you-know.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.whoCanInvestBg {
+  position: relative;
+}
+
+.whoCanInvestBg::before {
+  content: "";
+  background-image: url("/images/who-can-invest.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.whyMNAZBg {
+  position: relative;
+}
+
+.whyMNAZBg::before {
+  content: "";
+  background-image: url("/images/whyMNAZ.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.TrustDeedBg {
+  position: relative;
+}
+
+.TrustDeedBg::before {
+  content: "";
+  background-image: url("/images/trust.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.faqBg {
+  position: relative;
+}
+
+.faqBg::before {
+  content: "";
+  background-image: url("/images/faq.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  filter: brightness(30%);
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+@layer components {
+  .container {
+    @apply max-w-full w-[1440px] mx-auto;
+  }
+
+  .btn {
+    @apply bg-secondaryColor py-[13px] px-[35px] text-white text-[15px] font-[500] rounded-[5px];
+  }
+
+  .heading {
+    @apply text-[28px] font-[500] text-secondaryColor tracking-wide mb-[5px] text-center;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .container {
+    @apply w-full;
+  }
+}
+
+@media only screen and (max-width: 1024px) {
+  .navigation {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    background: #00000084;
+    display: none;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .menu {
+    width: 15rem;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    right: 0;
+    background: white;
+    opacity: 1;
+    z-index: 200;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    line-height: 30px;
+    animation: animate 0.7s;
+  }
+
+  .open {
+    display: flex;
+    flex-direction: column;
+    margin-top: 1rem;
+  }
+
+  @keyframes animate {
+    0% {
+      right: -15rem;
+    }
+    100% {
+      right: 0;
+    }
+  }
+
+  .show__menu {
+    display: block;
+  }
+
+  .heading {
+    font-size: 22px;
+  }
+}
